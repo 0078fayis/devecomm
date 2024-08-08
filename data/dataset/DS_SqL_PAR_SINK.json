@@ -1,0 +1,19 @@
+{
+	"name": "DS_SqL_PAR_SINK",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_Parquet1_SINK",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "order"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
