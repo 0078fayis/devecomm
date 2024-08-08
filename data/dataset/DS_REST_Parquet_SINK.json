@@ -1,0 +1,19 @@
+{
+	"name": "DS_REST_Parquet_SINK",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_REST_Parquet_SINK",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "customer"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
