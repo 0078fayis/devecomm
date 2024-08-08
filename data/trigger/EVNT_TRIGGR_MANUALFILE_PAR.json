@@ -1,0 +1,24 @@
+{
+	"name": "EVNT_TRIGGR_MANUALFILE_PAR",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_ADLS_PAR",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/manualfilepayment/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/7ba40041-166e-4a2b-ba0f-ffd265d95b78/resourceGroups/rg_dev_ecomm/providers/Microsoft.Storage/storageAccounts/adlsrawecomm",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
