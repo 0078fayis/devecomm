@@ -1,0 +1,12 @@
+{
+	"name": "DS_Rest_PAR_SOURCE",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://retoolapi.dev/Hyt7Ev/data",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
