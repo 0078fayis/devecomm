@@ -7,13 +7,45 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ADFDEVECOMM1"
 		},
-		"LS_SqlServerTable1_password": {
+		"DS_MANUALFILE_PARQUET_SOURCE_accountKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'LS_SqlServerTable1'"
+			"metadata": "Secure string for 'accountKey' of 'DS_MANUALFILE_PARQUET_SOURCE'"
+		},
+		"LS_MANUALFILE_PARQET_SINK_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_MANUALFILE_PARQET_SINK'"
+		},
+		"LS_REST_Parquet_SINK_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_REST_Parquet_SINK'"
 		},
 		"LS_SQL_Parquet1_SINK_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_SQL_Parquet1_SINK'"
+		},
+		"LS_SqlServerTable1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SqlServerTable1'"
+		},
+		"DS_MANUALFILE_PARQUET_SOURCE_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsrawecomm.dfs.core.windows.net/"
+		},
+		"DS_Rest_PAR_SOURCE_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://retoolapi.dev/Hyt7Ev/data"
+		},
+		"LS_MANUALFILE_PARQET_SINK_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssiecomm.dfs.core.windows.net/"
+		},
+		"LS_REST_Parquet_SINK_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssiecomm.dfs.core.windows.net/"
+		},
+		"LS_SQL_Parquet1_SINK_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlssiecomm.dfs.core.windows.net/"
 		},
 		"LS_SqlServerTable1_properties_typeProperties_server": {
 			"type": "string",
@@ -27,9 +59,9 @@
 			"type": "string",
 			"defaultValue": "sa"
 		},
-		"LS_SQL_Parquet1_SINK_properties_typeProperties_url": {
+		"EVNT_TRIGGR_MANUALFILE_PAR_properties_typeProperties_scope": {
 			"type": "string",
-			"defaultValue": "https://adlssiecomm.dfs.core.windows.net/"
+			"defaultValue": "/subscriptions/7ba40041-166e-4a2b-ba0f-ffd265d95b78/resourceGroups/rg_dev_ecomm/providers/Microsoft.Storage/storageAccounts/adlsrawecomm"
 		},
 		"containerUri": {
 			"type": "string",
@@ -58,11 +90,32 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"DS_MANUALFILE_PARQUET_SOURCE_accountKey": {
+						"value": "[parameters('DS_MANUALFILE_PARQUET_SOURCE_accountKey')]"
+					},
+					"LS_MANUALFILE_PARQET_SINK_accountKey": {
+						"value": "[parameters('LS_MANUALFILE_PARQET_SINK_accountKey')]"
+					},
+					"LS_REST_Parquet_SINK_accountKey": {
+						"value": "[parameters('LS_REST_Parquet_SINK_accountKey')]"
+					},
 					"LS_SQL_Parquet1_SINK_accountKey": {
 						"value": "[parameters('LS_SQL_Parquet1_SINK_accountKey')]"
 					},
 					"LS_SqlServerTable1_password": {
 						"value": "[parameters('LS_SqlServerTable1_password')]"
+					},
+					"DS_MANUALFILE_PARQUET_SOURCE_properties_typeProperties_url": {
+						"value": "[parameters('DS_MANUALFILE_PARQUET_SOURCE_properties_typeProperties_url')]"
+					},
+					"DS_Rest_PAR_SOURCE_properties_typeProperties_url": {
+						"value": "[parameters('DS_Rest_PAR_SOURCE_properties_typeProperties_url')]"
+					},
+					"LS_MANUALFILE_PARQET_SINK_properties_typeProperties_url": {
+						"value": "[parameters('LS_MANUALFILE_PARQET_SINK_properties_typeProperties_url')]"
+					},
+					"LS_REST_Parquet_SINK_properties_typeProperties_url": {
+						"value": "[parameters('LS_REST_Parquet_SINK_properties_typeProperties_url')]"
 					},
 					"LS_SQL_Parquet1_SINK_properties_typeProperties_url": {
 						"value": "[parameters('LS_SQL_Parquet1_SINK_properties_typeProperties_url')]"
@@ -75,6 +128,9 @@
 					},
 					"LS_SqlServerTable1_properties_typeProperties_userName": {
 						"value": "[parameters('LS_SqlServerTable1_properties_typeProperties_userName')]"
+					},
+					"EVNT_TRIGGR_MANUALFILE_PAR_properties_typeProperties_scope": {
+						"value": "[parameters('EVNT_TRIGGR_MANUALFILE_PAR_properties_typeProperties_scope')]"
 					}
 				}
 			},

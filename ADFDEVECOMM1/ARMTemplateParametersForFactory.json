@@ -5,11 +5,35 @@
 		"factoryName": {
 			"value": "ADFDEVECOMM1"
 		},
-		"LS_SqlServerTable1_password": {
+		"DS_MANUALFILE_PARQUET_SOURCE_accountKey": {
+			"value": ""
+		},
+		"LS_MANUALFILE_PARQET_SINK_accountKey": {
+			"value": ""
+		},
+		"LS_REST_Parquet_SINK_accountKey": {
 			"value": ""
 		},
 		"LS_SQL_Parquet1_SINK_accountKey": {
 			"value": ""
+		},
+		"LS_SqlServerTable1_password": {
+			"value": ""
+		},
+		"DS_MANUALFILE_PARQUET_SOURCE_properties_typeProperties_url": {
+			"value": "https://adlsrawecomm.dfs.core.windows.net/"
+		},
+		"DS_Rest_PAR_SOURCE_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/Hyt7Ev/data"
+		},
+		"LS_MANUALFILE_PARQET_SINK_properties_typeProperties_url": {
+			"value": "https://adlssiecomm.dfs.core.windows.net/"
+		},
+		"LS_REST_Parquet_SINK_properties_typeProperties_url": {
+			"value": "https://adlssiecomm.dfs.core.windows.net/"
+		},
+		"LS_SQL_Parquet1_SINK_properties_typeProperties_url": {
+			"value": "https://adlssiecomm.dfs.core.windows.net/"
 		},
 		"LS_SqlServerTable1_properties_typeProperties_server": {
 			"value": "LAPTOP-SPFM08CA\\SQLEXPRESS"
@@ -20,8 +44,8 @@
 		"LS_SqlServerTable1_properties_typeProperties_userName": {
 			"value": "sa"
 		},
-		"LS_SQL_Parquet1_SINK_properties_typeProperties_url": {
-			"value": "https://adlssiecomm.dfs.core.windows.net/"
+		"EVNT_TRIGGR_MANUALFILE_PAR_properties_typeProperties_scope": {
+			"value": "/subscriptions/7ba40041-166e-4a2b-ba0f-ffd265d95b78/resourceGroups/rg_dev_ecomm/providers/Microsoft.Storage/storageAccounts/adlsrawecomm"
 		}
 	}
 }
